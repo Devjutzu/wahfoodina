@@ -104,7 +104,7 @@ function fillData(data) {
                 </div>
             </div> 
         <div class="col-6 img-cont"><img src="${data.hits[c].recipe.image}" alt="Picture of ${data.hits[c].recipe.label}" /></div>
-        <div class="col-6 data-cont">
+        <div class="col-6">
    
             <div class="col-12">
                 <div class="ingre-title col-12">
