@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wahfoodina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+    <link href="float-grid.css" rel="stylesheet">
+</head>
+
+<body>
+    <section role="region" class="top-bar">
+        <header role="header" class="row">
+            <h1>Wahfoodina</h1>
+        </header>
+        <div class="instructables">
+            <h2>Instructables</h2>
+            <p>1. Type in your ingredients into the first box separated by a comma</p>
+            <p>2. Select a diet plan to make sure the meals returned will fit a healthy lifestyle</p>
+            <p>3. Select all stipulations that match your eating habits.</p>
+            <p class="tip">(Hold CTRL or CMD while selecting to select multiple) </p>
+        </div>
+    </section>
+    <section role="region" class="row search-section">
+        <form role="form" id="form" action="#">
+            <div class="ingredient-section col-4">
+                <h2>Type an ingredient you like</h2>
+                <textarea size="4" id="textbox" name="name" placeholder="Separate Ingredients with commas"></textarea>
+            </div>
+            <div class="diet col-4">
+                <h2>Diet parameters:</h2>
+                <select class="diet-value" size="4">
+                        <option value="none">None</option>
+                        <option value="balanced">Balanced</option >
+                        <option value="high-fiber">High-Fiber</option>
+                        <option value="high-protein">High-Protein</option>
+                        <option value="low-carb">Low-Carb</option>
+                        <option value="low-fat">Low-Fat</option>
+                        <option value="low-sodium">Low-Sodium</option>
+                    </select>
+            </div>
+
+            <div class="health col-4">
+                <h2 class="tut-hover">Allergies or Intolerance</h2>
+                <select class="stip-value" multiple>
+                        <option value="alcohol-free">  AlcoholFree</option>
+                        <option value="celery-free">Celery-free</option> 
+                        <option value=" crustacean-free">Crustcean-free</option>
+                        <option value="dairy-free">Dairy</option>
+                        <option value="egg-free">Eggs</option>
+                        <option value="fish-free">Fish</option>
+                        <option value="gluten-free">Gluten</option>
+                        <option value="kidney-friendly">Kidney friendly</option>
+                        <option value="kosher">Kosher</option>
+                        <option value="low-potassium">Low potassium</option>
+                        <option value="lupine-free">Lupine-free</option>
+                        <option value="mustard-free">Mustard-free</option>
+                        <option value="low-fat-abs">Low fat</option>
+                        <option value="No-oil-added">No oil added</option>
+                        <option value="low-sugar">No-sugar</option>
+                        <option value="paleo">Paleo</option>
+                        <option value="peanut-free">Peanuts</option>
+                        <option value="pecatarian">Pescatarian</option>
+                        <option value="pork-free">Pork-free</option>
+                        <option value="red-meat-free">Red meat-free</option>
+                        <option value="sesame-free">Sesame-free</option>
+                        <option value="shellfish-free">Shellfish</option>
+                        <option value="soy-free">Soy</option>
+                        <option value="sugar-conscious">Sugar-conscious</option>
+                        <option value="tree-nut-free">Tree Nuts </option>
+                        <option value="vegan">Vegan</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="wheat-free">Wheat-free</option>
+		            </select>
+            </div>
+            <div class="row"><button class="col-12" type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="error col-12">
+            <h2>Sorry, that combination doesn't yield anything tasty.</h2>
+        </div>
+    </section>
+    <section role="region" class="load-cont row">
+        <div class="loader center"></div>
+    </section>
+    <section role="region" class="js-results">
+
+    </section>
+    <section role="region" class="row youtube-section;">
+        <div class="">
+            <div class="youtube-data col-12">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
